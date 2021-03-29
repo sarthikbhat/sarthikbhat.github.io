@@ -1,0 +1,70 @@
+html{font-family: 'Lato','Open-Sans',sans-serif,'Montserrat';}
+#main{max-width: 1024px;padding: 1rem;}
+.head-contact-logo{color: #000;}
+.head-contact{
+    display: flex;
+    align-items: center;
+    padding: 0.8em;
+    background: #f1f2f6;
+    border-radius: 0.25em;
+    justify-content: center;
+}
+.head-contact-sm{
+    display: flex;
+    align-items: center;
+    padding: 0.8em;
+    background: #f1f2f6;
+    border-radius: 0.25em;
+}
+.head-contact-text{font-size: 1.1em;color: #000;font-weight: 700;}
+.social-icons{color: #bbc1c3;}
+.me{
+    max-width: 25em;
+    height: auto;
+}
+.hey{
+    font-size: calc(1.5rem + 1.5vw);
+    font-weight: 900;
+}
+.intro-text{
+    color: #464748;
+    font-size: 1.1em;
+    letter-spacing: 0.02em;
+    line-height: 1.7em;
+}
+.focus{
+    font-weight: 900;
+}
+.intro-block{
+    /* display: flex; */
+    /* justify-content: center; */
+}
+#sm-me{
+   justify-content: center !important;
+}
+.me-small{
+    max-width: calc(16rem + 1.5vw);
+    height: auto;
+}
+
+@media only screen and (max-width: 992px) {
+    .intro-block{
+        width: 100% !important;
+    }
+    #sm-me-div{
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+       justify-content: center !important;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .head-contact{
+        display: none;
+    }
+    .head-contact-icons{
+        padding: 1rem 0;
+        display: flex;
+        width: 100%;
+         justify-content: center;
+    }
+}
