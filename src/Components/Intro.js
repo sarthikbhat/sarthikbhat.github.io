@@ -5,7 +5,7 @@ const Intro = () => {
   return (
     <section className="container px-3 p-sm-5">
       <div className="row my-5 py-5 py-xs-0 my-xs-0 " id="sm-me-div">
-      <div className="container col d-xs-flex d-sm-flex d-md-flex d-lg-none mx-auto mb-4" id="sm-me">
+      <div className="container col d-xs-flex d-sm-flex d-md-flex d-lg-none mx-auto mb-4 " id="sm-me">
           <img className="me-small" alt='me-small' src={me} />
         </div>
         <div className="col-8 intro-block">
