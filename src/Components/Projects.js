@@ -11,7 +11,7 @@ const Projects = () => {
             <div className="p-card">
               <div className="row my-2">
                 <h4 className="col-10">{projects[elm].name}</h4>
-                <i className="fas fa-code col-2 align-self"></i>
+                <a href={projects[elm].link} className='no-pls col-2 '><i className="fas fa-code align-self"></i></a>
               </div>
               <hr />
               <p className="p-desc">{projects[elm].description}</p>

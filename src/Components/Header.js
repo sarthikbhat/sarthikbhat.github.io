@@ -9,10 +9,12 @@ const Header = () => {
             <p className="my-auto ms-3 head-contact-text">Contact Me?</p>
             </div>
             </a>
+            <a href='https://sarthikbhat.me/assets/sarthik_resume.pdf' className='no-pls'>
             <div className='head-contact'>
             <i className="fas fa-file fa-lg head-contact-logo"></i> 
             <p className="my-auto ms-3 head-contact-text">My CV</p>
             </div>
+            </a>
             <div className="ms-auto head-contact-icons mb-2">
             <a href='https://github.com/sarthikbhat/' target='_BLANK' rel="noreferrer"><i class="fab fa-github fa-2x social-icons mx-2"></i></a>
             <a href='https://www.linkedin.com/in/sarthik-bhat-8333a6169/'target='_BLANK' rel="noreferrer"><i class="fab fa-linkedin fa-2x social-icons mx-2"></i></a>

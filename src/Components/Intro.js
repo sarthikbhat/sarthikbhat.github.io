@@ -9,10 +9,12 @@ const Intro = () => {
           <img className="me-small" alt='me-small' src={me} />
         </div>
       <div className=" d-xs-flex d-sm-flex d-md-flex d-lg-none">
+        <a href='https://sarthikbhat.me/assets/sarthik_resume.pdf' className='no-pls'>
       <div className='cv-contact-sm d-xs-flex d-sm-none mx-auto mb-4'>
             <i className="fas fa-file fa-lg head-contact-logo"></i> 
             <p className="my-auto ms-3 head-contact-text">My CV</p>
             </div>
+            </a>
         </div>
         <div className="col-8 intro-block">
           <h1 className='hey'>Hey! I'm Sarthik Bhat</h1>

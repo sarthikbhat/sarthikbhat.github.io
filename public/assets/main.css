@@ -35,7 +35,9 @@ html{font-family: 'Lato','Open-Sans',sans-serif,'Montserrat';}
 }
 .no-pls{
     text-decoration: none;
+    color: #000;
 }
+
 .timeline{
     display: flex;
     align-items: flex-start;
