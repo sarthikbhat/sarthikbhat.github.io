@@ -10,7 +10,7 @@ const projects = {
     name: "Jobbify",
     link: "https://github.com/sarthikbhat/Lunatic_Byte_Jobbify",
     description:
-      "Jobbify is an ML/AI powered smart Webapp and Mobile Application to find the best candidate in recruitment process.It acts as complete solution to already long process. NLP was used for the Process.",
+      "Jobbify is an ML and AI powered smart Webapp and Mobile Application to find the best candidate in recruitment process.It acts as complete solution to already long process. NLP was used to ease the candidate finding process ",
     tags: ["ReactJs", "React Native", "Flask", "NLP", "SQLite", "Python"],
   },
   Waterio: {
