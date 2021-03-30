@@ -1,6 +1,19 @@
 html{font-family: 'Lato','Open-Sans',sans-serif,'Montserrat';}
-#main{max-width: 1440px;padding: 1rem;}
-/* .main2{max-width: 1048px;padding: 1rem;display: flex;margin:  0 auto;} */
+#main{max-width: 1200px;padding: 1rem;}
+.fade    {
+    animation: fadeInAnimation ease-in-out 1s forwards !important;
+    animation-iteration-count: 1!important;
+    animation-fill-mode: forwards !important;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+/* .main2{max-width: 922px;padding: 1rem;display: flex;margin:  0 auto;} */
 .head-contact-logo{color: #000;}
 .head-contact{
     display: flex;
@@ -9,6 +22,10 @@ html{font-family: 'Lato','Open-Sans',sans-serif,'Montserrat';}
     background: #f1f2f6;
     border-radius: 0.25em;
     justify-content: center;
+}
+img{
+    width: auto;
+    height: auto;
 }
 .cv-contact{
     display: flex;
@@ -191,3 +208,5 @@ html{font-family: 'Lato','Open-Sans',sans-serif,'Montserrat';}
     height: 100%;
     left: 50%;
 }
+
+
