@@ -1,12 +1,13 @@
 import React from "react";
 import me from "../images/me.png";
+import mesm from "../images/me-sm.png";
 
 const Intro = () => {
   return (
     <section className="container px-3 px-sm-5">
       <div className="row my-5 pt-5 py-xs-0 my-xs-0 " id="sm-me-div">
       <div className="container col-12 d-xs-flex d-sm-flex d-md-flex d-lg-none mx-auto mb-4 " id="sm-me">
-          <img className="me-small" alt='me-small' src={me} />
+          <img className="me-small" alt='me-small' src={mesm} />
         </div>
       <div className=" d-xs-flex d-sm-flex d-md-flex d-lg-none">
         <a href='https://sarthikbhat.me/assets/sarthik_resume.pdf' className='no-pls'>
