@@ -63,7 +63,8 @@ img{
 .social-icons{color: #bbc1c3;}
 .me{
     max-width: 25em;
-    height: auto;
+    height: 100%;
+    width: 100%;
 }
 .hey{
     font-size: calc(1.5rem + 1.5vw);
@@ -107,7 +108,8 @@ img{
 }
 .me-small{
     max-width: calc(16rem + 1.5vw);
-    height: auto;
+    height: 100%;
+    width: 100%;
 }
 .timeline .vertical-line{
     align-self: stretch;
