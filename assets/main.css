@@ -1,4 +1,8 @@
 html{font-family: 'Lato','Open-Sans',sans-serif,'Montserrat';}
+::selection{
+    color: white;
+    background-color: #474849
+}
 #main{max-width: 1200px;padding: 1rem;}
 .fade    {
     animation: fadeInAnimation ease-in-out 1s forwards !important;
