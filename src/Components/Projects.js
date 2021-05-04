@@ -8,7 +8,7 @@ const Projects = () => {
       <div className="p-card-outer mt-5 ">
         {Object.keys(projects).map((elm, index) => {
           return (
-            <div className="p-card">
+            <div className="p-card" key={index}>
               <div className="row my-2">
                 <h4 className="col-10">{projects[elm].name}</h4>
                 <a href={projects[elm].link} className='no-pls col-2 '><i className="fas fa-code align-self"></i></a>
@@ -17,10 +17,10 @@ const Projects = () => {
               <p className="p-desc">{projects[elm].description}</p>
               <hr />
               <div>
-                <h5>Tect Stack</h5>
+                <h5>Tech Stack</h5>
                 <div className="d-flex stack">
                   {projects[elm].tags.map((e, i) => {
-                    return <div className="m-1">{e}</div>;
+                    return <div className="m-1" key={i}>{e}</div>;
                   })}
                 </div>
               </div>

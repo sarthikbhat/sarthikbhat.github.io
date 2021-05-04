@@ -3,15 +3,15 @@ import React from "react";
 const Experience = () => {
   return (
     <section
-      class="container-fluid anchor pb-5 experiences-section mt-5"
+      className="container-fluid anchor pb-5 experiences-section mt-5"
       id="experiences"
     >
-      <h2 class="">Experience</h2>
+      <h2 className="">Experience</h2>
       <hr />
-      <div class=" timeline text-justify mt-5 row">
-        <div class=" align-items-center relative  d-flex col-12  col-md-8">
-          <div class="">
-            <div class="experience-entry-heading">
+      <div className=" timeline text-justify mt-5 row">
+        <div className=" align-items-center relative  d-flex col-12  col-md-8">
+          <div className="">
+            <div className="experience-entry-heading">
               <h5>
                 <a className="no-link" href="https://www.weareaddictives.com/">
                   Addictive Media
@@ -19,12 +19,12 @@ const Experience = () => {
               </h5>
 
               <span>
-                <h5 class="designation">Software Developer</h5>{" "}
-                <p class="text-muted">June 2020 - January 2021</p>
+                <h5 className="designation">Software Developer</h5>{" "}
+                <p className="text-muted">June 2020 - January 2021</p>
               </span>
             </div>
 
-            <div class="positions">
+            <div className="positions">
               <p className="mx-0 my-1 work">
                 • Created the android and iOS app for the Big Boy Toyz Ltd which
                 is a luxury car resale brand
@@ -84,9 +84,9 @@ const Experience = () => {
           </div>
         </div>
         
-        <div class=" align-items-center relative  d-flex col-12 col-md-4">
-          <div class="">
-            <div class="experience-entry-heading">
+        <div className=" align-items-center relative  d-flex col-12 col-md-4">
+          <div className="">
+            <div className="experience-entry-heading">
               <h5>
                 {/* <a className="no-link" href="https://www.weareaddictives.com/"> */}
                 Preptick
@@ -94,12 +94,12 @@ const Experience = () => {
               </h5>
 
               <span>
-                <h5 class="designation">Web Developer</h5>{" "}
-                <p class="text-muted">July 2020 - October 2019</p>
+                <h5 className="designation">Web Developer</h5>{" "}
+                <p className="text-muted">July 2020 - October 2019</p>
               </span>
             </div>
 
-            <div class="positions">
+            <div className="positions">
 
               <p className="mx-0 my-1 work">
                 • Developed the front-end of company's website using React JS.
