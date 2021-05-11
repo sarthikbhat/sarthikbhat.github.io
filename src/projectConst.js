@@ -5,6 +5,7 @@ const projects = {
     description:
       "The project was to automate and digitalize the complaint filing process in a police station as well as an emergency SOS to notify the nearest police stations. It was built using react native and web dashboard",
     tags: ["ReactJs", "React Native", "ExpressJS", "MongoDb", "SQL"],
+    extra:'February 2020 · SIH 2020'
   },
   Jobbify: {
     name: "Jobbify",
@@ -12,6 +13,7 @@ const projects = {
     description:
       "Jobbify is an ML and AI powered smart Webapp and Mobile Application to find the best candidate in recruitment process.It acts as complete solution to already long process. NLP was used to ease the candidate finding process ",
     tags: ["ReactJs", "React Native", "Flask", "NLP", "SQLite", "Python"],
+    extra:'January  2020'
   },
   Waterio: {
     name: "Water.io",
@@ -19,6 +21,7 @@ const projects = {
     description:
       "An interactive webapp to predict groundwater level for the user specified region, for upcoming 10 years with an accuracy of 90%,(ARIMA Model). The data was scraped from data.gov.in using Flask.",
     tags: ["ReactJs", "ExpressJs", "Machine Learning", "MongoDb"],
+    extra:'February 2019 · SIH 2019'
   },
   NGOSolutions: {
     name: "NGO Solutions",
@@ -26,6 +29,7 @@ const projects = {
     description:
       "Developed a complete web app for completely digitalizing the registration of volunteers and other management operations. Appropriate emails for validation were sent. A certificate (in PDF format) was also generated.",
     tags: ["ReactJs", "ExpressJs", "Python", "MongoDb"],
+    extra:'March 2019'
   },
     Motherboard: {
       name: "Motherboard",
@@ -33,6 +37,7 @@ const projects = {
       description:
         "Created a student-teacher portal for enhancing the learning process with a WhatsApp type interface for sharing important information , attendance manager and a grievances portal.It is a real time chat application.",
       tags: ['ReactJs','ExpressJs','GraphQL','Socket.io','SQL'],
+      extra:'May 2019'
     },
     WeatherApp: {
       name: "Weather App",
@@ -40,6 +45,7 @@ const projects = {
       description:
         "This is a basic weather and timezone app with various features like bookmarking a country/region for easier future access. It was a colege mini as well as a self learning project to integrate react with Django using DRF.",
       tags: ['ReactJs','Django','Python'],
+      extra:'May 2019'
     },
 };
 

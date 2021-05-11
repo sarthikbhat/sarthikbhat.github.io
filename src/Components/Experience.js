@@ -6,8 +6,7 @@ const Experience = () => {
       className="container-fluid anchor pb-5 experiences-section mt-5"
       id="experiences"
     >
-      <h2 className="">Experience</h2>
-      <hr />
+      <h2 className="heading">Experience</h2>
       <div className=" timeline text-justify mt-5 row">
         <div className=" align-items-center relative  d-flex col-12  col-md-8">
           <div className="">
@@ -20,7 +19,7 @@ const Experience = () => {
 
               <span>
                 <h5 className="designation">Software Developer</h5>{" "}
-                <p className="text-muted">June 2020 - January 2021</p>
+                <p className="ese">June 2020 - January 2021</p>
               </span>
             </div>
 
@@ -95,7 +94,7 @@ const Experience = () => {
 
               <span>
                 <h5 className="designation">Web Developer</h5>{" "}
-                <p className="text-muted">July 2020 - October 2019</p>
+                <p className="ese">July 2020 - October 2019</p>
               </span>
             </div>
 

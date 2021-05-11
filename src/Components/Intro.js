@@ -8,11 +8,10 @@ const Intro = () => {
       <div className="container col-12 d-xs-flex d-sm-flex d-md-flex d-lg-none mx-auto mb-4 " id="sm-me">
           <img className="me-small" alt='me-small' src={me} />
         </div>
-      <div className=" d-xs-flex d-sm-flex d-md-flex d-lg-none">
-        <a href='https://sarthikbhat.me/assets/sarthik_resume.pdf' className='no-pls'>
-      <div className='cv-contact-sm d-xs-flex d-sm-none mx-auto mb-4'>
-            <i className="fas fa-file fa-lg head-contact-logo"></i> 
-            <p className="my-auto ms-3 head-contact-text">My CV</p>
+      <div className="">
+        <a href='https://sarthikbhat.me/assets/sarthik_resume.pdf' className='no-pls resume2 '>
+      <div className='cv-contact-sm d-xs-flex mx-auto mb-4 resume2'>
+            <p className="my-auto head-contact-text">Resume</p>
             </div>
             </a>
         </div>
