@@ -31,6 +31,22 @@ const Projects = () => {
     else seti(index)
   }
 
+  React.useEffect(() => {
+    document.addEventListener('scroll', ()=>{
+      var height = window.innerHeight
+      var topper = document.querySelector('.smm').getBoundingClientRect().top
+      if(topper<height){
+        var elm1 = document.getElementsByClassName('even');
+        var elm2 = document.getElementsByClassName('odd');
+        for (var i = 0, len = elm1.length; i < len; i++) {
+          elm1[i].classList.add('lefter');
+          elm2[i].classList.add('righter');
+      }
+      }
+    })
+   
+  }, [])
+
   return (
     <>
       <section className="container-fluid hideBelow766">
@@ -39,8 +55,8 @@ const Projects = () => {
           <div className='col-6 project-list'>
             {Object.keys(projects).map((elm, index) => {
               return (
-                <a href={projects[elm].link} className='no-pls'  target='_BLANK' rel=" noopener noreferrer">
-                <div className='outer' onMouseOver={() => changeDesc(elm)} onMouseOut={() => remover()} key={index}>
+                <a href={projects[elm].link} className='no-pls'  target='_BLANK' rel=" noopener noreferrer" key={index}>
+                <div className='outer incoming' style={{animationDelay:(index/2)+'s'}} onMouseOver={() => changeDesc(elm)} onMouseOut={() => remover()} >
                   <h4 className="p-title">{index + 1}. {projects[elm].name}</h4>
                   <p className='dets'> {projects[elm].extra}</p>
                 </div>
@@ -67,12 +83,12 @@ const Projects = () => {
         </div>
       </section>
       <section className="container-fluid hideAbove766">
-        <h2 className="heading">Projects</h2>
+        <h2 className="heading smm">Projects</h2>
         <div className="row g-0 mister" >
           <div className='col project-list-sm'>
             {Object.keys(projects).map((elm, index) => {
               return (
-                <div className='outer-sm' onClick={()=>setterse(index)}>
+                <div className={index%2===0?'outer-sm even':'outer-sm odd'} onClick={()=>setterse(index)} key={index}>
                   <div className="row">
                   <h4 className="p-title col-10">{index + 1}. {projects[elm].name}</h4>
                   <a href={projects[elm].link} className='no-pls col-2' target='_BLANK' rel=" noopener noreferrer"><i className="fas fa-code align-self"></i></a>
