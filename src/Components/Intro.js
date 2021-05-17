@@ -1,4 +1,4 @@
-import React from "react";
+
 import me from "../images/me.png";
 
 const Intro = () => {
@@ -6,7 +6,7 @@ const Intro = () => {
     <section className="container px-3 px-sm-5">
       <div className="row my-5 pt-5 py-xs-0 my-xs-0 " id="sm-me-div">
         <div className="container col-12 d-xs-flex d-sm-flex d-md-flex d-lg-none mx-auto mb-4 " id="sm-me">
-          <img className="me-small" alt='me-small' src={me} />
+          <img className="me-small" width='100' height='100' alt='me-small' src={me} />
         </div>
         <div className="">
           <a href='https://sarthikbhat.me/assets/sarthik_resume.pdf' className='no-pls resume2 '>
@@ -39,7 +39,7 @@ const Intro = () => {
           </p>
         </div>
         <div className="col-4 d-none d-lg-block  d-xl-block d-xxl-block">
-          <img className="me" alt='me' src={me} />
+          <img className="me" width='100' height='100' alt='me' src={me} />
         </div>
       </div>
     </section>
