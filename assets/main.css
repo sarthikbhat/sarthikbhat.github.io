@@ -114,7 +114,7 @@ img{
 }
 .hey{
     font-size: calc(1.5rem + 1.5vw);
-    font-weight: 900;
+    font-weight: 700;
 }
 .intro-text{
     color: #464748;
@@ -466,7 +466,7 @@ img{
 
     display: inline-block;
     transform: translateY(0%) ;
-    animation: upper 0.5s ease-in-out forwards;
+    animation: upper 0.3s ease-in-out forwards;
 }
 
 @keyframes jumper {
