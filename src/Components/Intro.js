@@ -29,16 +29,23 @@ const Intro = () => {
               
             )
           })}</h1> */}
+          <div className="code-bg">
+            <div className="red"/>
+            <div className="yellow"/>
+            <div className="green"/>
           <p className="intro-text">
-            I'm a Final year Computer Engineering student from Dwarkadas J
-            Sanghvi College of Engineering. <br />Well versed with <span className="focus">Full Stack Web
+            <span className="comment">{'//'} Some Text About Me</span>
+            <br/>
+            I'm a <span className="focus some">Final year</span> Computer Engineering student from <span className="focus marker">Dwarkadas J
+            Sanghvi College of Engineering</span>. <br />Well versed with <span className="focus keyword">Full Stack Web
             Development</span>. I am an enthusiast and passionate about learning new
-            things. Currently learning <span className="focus">Machine Learning</span> I
+            things. Currently learning <span className="focus keyword">Machine Learning</span> I
             am also passionate about competitive coding and writing. I am
-            currently focussed on <span className="focus">Mobile App Development</span>.
-          </p>
+            currently focussed on <span className="focus keyword">Mobile App Development</span>.
+          </p >
+          </div>
         </div>
-        <div className="col-4 d-none d-lg-block  d-xl-block d-xxl-block">
+        <div className="col-4 d-none d-lg-flex  d-xl-flex d-xxl-flex heya">
           <img className="me" width='100' height='100' alt='me' src={me} />
         </div>
       </div>

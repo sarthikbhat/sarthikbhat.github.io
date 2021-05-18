@@ -109,12 +109,14 @@ img{
 .social-icons{color: #bbc1c3;}
 .me{
     max-width: 25em;
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 96%;
 }
 .hey{
     font-size: calc(1.5rem + 1.5vw);
     font-weight: 700;
+    margin-bottom: 15px;
+
 }
 .intro-text{
     color: #464748;
@@ -583,4 +585,73 @@ img{
         display: block;
     }
     
+}
+.code-bg{
+    background: #1e1e1e;
+    color: #dcdcdc;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 30px 80px rgba(0, 0, 0, 0.12)
+;
+}
+
+.code-bg p{
+    background: #1e1e1e;
+    color: #9cdcfe;
+    padding: 2%;
+    /* font-family: 'SFMono-Regular, Menlo, Monaco, Consolas'; */
+}
+
+.code-bg p .comment{
+    padding: 0;
+    font-size:0.9em;
+    color: #57a64a;
+}
+.code-bg p .keyword{
+    color: #569cd6;
+}
+.code-bg p .keyword-lgt{
+    color: #9cdcfe;
+}
+.code-bg p .marker{
+    color: #be4678;
+}
+.code-bg p .some{
+    color: #aa573c;
+}
+.red{
+    background-color: #f06053;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0px 2px;
+    margin-left: 10px;
+}
+.yellow{
+    background-color: #f7b726;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0px 2px;
+}
+.green{
+    background-color: #18c42f;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0px 2px;
+}
+.heya{
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
