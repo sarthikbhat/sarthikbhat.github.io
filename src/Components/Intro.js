@@ -3,7 +3,7 @@ import me from "../images/me.png";
 
 const Intro = () => {
   return (
-    <section className="container px-3 px-sm-5">
+    <section className=" px-3 px-sm-3">
       <div className="row my-5 pt-5 py-xs-0 my-xs-0 " id="sm-me-div">
         <div className="container col-12 d-xs-flex d-sm-flex d-md-flex d-lg-none mx-auto mb-4 " id="sm-me">
           <img className="me-small" width='100' height='100' alt='me-small' src={me} />
@@ -39,9 +39,11 @@ const Intro = () => {
             I'm a <span className="focus some">Final year</span> Computer Engineering student from <span className="focus marker">Dwarkadas J
             Sanghvi College of Engineering</span>. <br />Well versed with <span className="focus keyword">Full Stack Web
             Development</span>. I am an enthusiast and passionate about learning new
-            things. Currently learning <span className="focus keyword">Machine Learning</span> I
+            things. 
+            {/* Currently learning <span className="focus keyword">Machine Learning</span>  */}
+             I
             am also passionate about competitive coding and writing. I am
-            currently focussed on <span className="focus keyword">Mobile App Development</span>.
+            currently focussed on <span className="focus keyword">Mobile App Development</span><span className="cursor"></span>
           </p >
           </div>
         </div>

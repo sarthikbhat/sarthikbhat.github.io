@@ -6,6 +6,12 @@ const Projects = () => {
   const [i, seti] = React.useState(-1)
 
   function changeDesc(project) {
+    document.querySelector('.pt').classList.remove('fader')
+    document.querySelector('.stack').classList.remove('fader')
+    document.querySelector('.p-desc').classList.remove('fader')
+    document.querySelector('.ts').classList.remove('fader')
+    document.querySelector('.hr').classList.remove('fader')
+    if(project!==proj){
     setTimeout(() => {
       document.querySelector('.pt').classList.add('fader')
       document.querySelector('.stack').classList.add('fader')
@@ -15,15 +21,6 @@ const Projects = () => {
       setProj(project)
     }, 200);
   }
-  function remover() {
-
-    // setTimeout(() => {
-    document.querySelector('.pt').classList.remove('fader')
-    document.querySelector('.stack').classList.remove('fader')
-    document.querySelector('.p-desc').classList.remove('fader')
-    document.querySelector('.ts').classList.remove('fader')
-    document.querySelector('.hr').classList.remove('fader')
-    // }, 100);
   }
 
   function setterse(index){
@@ -52,12 +49,12 @@ const Projects = () => {
       <section className="container-fluid hideBelow766">
         <h2 className="heading">Projects</h2>
         <div className="row g-0 mister" >
-          <div className='col-6 project-list'>
+          <div className='col-6 project-list' onMouseOver={() =>{}} onMouseOut={() => {}}>
             {Object.keys(projects).map((elm, index) => {
               return (
                 <a href={projects[elm].link} className='no-pls'  target='_BLANK' rel=" noopener noreferrer" key={index}>
-                <div className='outer incoming' style={{animationDelay:(index/2)+'s'}} onMouseOver={() => changeDesc(elm)} onMouseOut={() => remover()} >
-                  <h4 className="p-title">{index + 1}. {projects[elm].name}</h4>
+                <div className='outer incoming' style={{animationDelay:(index/2)+'s'}}  onMouseOver={() => changeDesc(elm)} onMouseOut={() => {}} >
+                  <h4 className="p-title" >{index + 1}. {projects[elm].name}</h4>
                   <p className='dets'> {projects[elm].extra}</p>
                 </div>
                 </a>)
@@ -78,6 +75,9 @@ const Projects = () => {
                   })}
                 </div>
               </div>
+                {/* <div className="out-proj-img">
+                  <img src={coptime}/>
+                </div> */}
             </div>
           </div>
         </div>
