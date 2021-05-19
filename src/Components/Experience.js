@@ -11,7 +11,7 @@ const Experience = () => {
           <div className="">
             <div className="experience-entry-heading">
               <h5>
-                <a className="no-link" href="https://www.weareaddictives.com/">
+                <a target='_BLANK' rel=" noopener noreferrer" className="no-link" href="https://us.weareaddictives.com/">
                   Addictive Media
                 </a>
               </h5>
@@ -41,7 +41,7 @@ const Experience = () => {
             <div className="p-tags my-3">
               <div className="d-flex">
                 <div className="m-1">
-                  <a
+                  <a target='_BLANK' rel=" noopener noreferrer"
                     className="no-link"
                     href="https://play.google.com/store/apps/details?id=com.bigboytoyzapp&hl=en_IN "
                   >
@@ -49,7 +49,7 @@ const Experience = () => {
                   </a>
                 </div>
                 <div className="m-1">
-                  <a
+                  <a target='_BLANK' rel=" noopener noreferrer"
                     className="no-link"
                     href="https://apps.apple.com/in/app/big-boy-toyz/id1529588618 "
                   >
@@ -57,7 +57,7 @@ const Experience = () => {
                   </a>
                 </div>
                 <div className="m-1">
-                  <a
+                  <a target='_BLANK' rel=" noopener noreferrer"
                     className="no-link"
                     href="https://www.bigboytoyz.com/newcars/ "
                   >
@@ -65,12 +65,13 @@ const Experience = () => {
                   </a>
                 </div>
                 <div className="m-1 me-2">
-                  <a className="no-link" href="https://us.weareaddictives.com/">
+                  <a target='_BLANK' rel=" noopener noreferrer" className="no-link" href="https://us.weareaddictives.com/">
                     Addictive Media Website
                   </a>
                 </div>
                 <div className="m-1 mx-2">
                   <a
+                  target='_BLANK' rel=" noopener noreferrer"
                     className="no-link"
                     href="https://www.weareaddictives.com/blogs"
                   >
