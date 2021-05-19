@@ -478,16 +478,16 @@ img{
         transform: translateY(0%) rotate(0);
     }
     20%{
-        transform: translateY(-80%) rotate(0);
+        transform: translateY(-60%) rotate(0);
     }
     30%{
-        transform: translateY(-80%) ;
+        transform: translateY(-60%) ;
     }
     60%{
-        transform: translateY(-80%) rotate(360deg);
+        transform: translateY(-60%) rotate(360deg);
     }
     80%{
-        transform: translateY(-80%) rotate(360deg);
+        transform: translateY(-60%) rotate(360deg);
     }
     85%{
         transform: translateY(0%) rotate(360deg);
@@ -508,7 +508,7 @@ img{
 .jump{
     display: inline-block;
     transform: translateY(0%) rotate(0) ;
-    animation: jumper 1s ease-in-out forwards;
+    animation: jumper 0.7s ease-in-out forwards;
 }
 
 
