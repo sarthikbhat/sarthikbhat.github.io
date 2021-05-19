@@ -156,7 +156,7 @@ img{
    justify-content: center !important;
 }
 .me-small{
-    max-width: calc(16rem + 1.5vw);
+    max-width: calc(14rem + 1vw);
     height: 100%;
     width: 100%;
 }
@@ -436,7 +436,7 @@ img{
 
 .lefter{
     transform: translateX(-200%);
-    animation: leftin 1s ease-in-out forwards;
+    animation: leftin 0.8s ease-in-out forwards;
 }
 @keyframes rightin {
     0%{
@@ -449,7 +449,7 @@ img{
 
 .righter{
     transform: translateX(200%);
-    animation: rightin 1s ease-in-out forwards;
+    animation: rightin 0.8s ease-in-out forwards;
 }
 
 @keyframes upper {
@@ -470,7 +470,7 @@ img{
 
     display: inline-block;
     transform: translateY(0%) ;
-    animation: upper 0.3s ease-in-out forwards;
+    animation: upper 0.25s ease-in-out forwards;
 }
 
 @keyframes jumper {
