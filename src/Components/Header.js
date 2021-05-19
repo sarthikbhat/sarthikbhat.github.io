@@ -18,7 +18,7 @@ const Header = () => {
             <a href='https://www.linkedin.com/in/sarthik-bhat-8333a6169/' className='disp' target='_BLANK' rel="noopener noreferrer"><i className="fab fa-linkedin fa-2x social-icons mx-2"></i></a>
             <a href='https://www.hackerrank.com/bhatsarthik28?hr_r=1' className='disp'  target='_BLANK' rel="noopener noreferrer"><i className="fab fa-hackerrank fa-2x social-icons mx-2"></i></a>
             <a href='mailto:bhatsarthik28@gmail.com' target='_BLANK' rel=" noopener noreferrer" className='disp'><i className="fas fa-envelope fa-2x social-icons mx-2"></i></a>
-                <a href='https://sarthikbhat.me/assets/sarthik_resume.pdf' className='no-pls resume1'>
+                <a href='https://sarthikbhat.me/assets/sarthik_resume.pdf' target='_BLANK' rel=" noopener noreferrer" className='no-pls resume1'>
                     <div className='head-contact'>
                         <p className="my-auto head-contact-text">Resume</p>
                     </div>

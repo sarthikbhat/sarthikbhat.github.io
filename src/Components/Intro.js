@@ -11,8 +11,8 @@ const Intro = () => {
         <div className="container col-12 d-xs-flex d-sm-flex d-md-flex d-lg-none mx-auto mb-4 " id="sm-me">
           <picture>
             <source className="me-small" width='100' height='100' alt='me-small' type='image/webp' srcSet={meWebp} />
-            <source className="me-small" width='100' height='100' alt='me-small' type='image/jxr' srcSet={meJxr} />
-            <source className="me-small" width='100' height='100' alt='me-small' type='image/jp2' srcSet={meJp2} />
+            {/* <source className="me-small" width='100' height='100' alt='me-small' type='image/jxr' srcSet={meJxr} />
+            <source className="me-small" width='100' height='100' alt='me-small' type='image/jp2' srcSet={meJp2} /> */}
           <img className="me-small" width='100' height='100' alt='me-small' src={me} />
           </picture>
         </div>

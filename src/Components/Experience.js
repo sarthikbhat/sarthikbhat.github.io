@@ -94,7 +94,7 @@ const Experience = () => {
 
               <span>
                 <h5 className="designation">Web Developer</h5>{" "}
-                <p className="ese">July 2020 - October 2019</p>
+                <p className="ese">July 2019 - October 2019</p>
               </span>
             </div>
 
