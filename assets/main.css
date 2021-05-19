@@ -4,7 +4,7 @@ html{font-family: 'Lato','Open-Sans',sans-serif,'Montserrat';}
     background-color: #474849
 }
 #main{max-width: 1200px; padding: 0px 100px;}
-.fade    {
+/* .fade    {
     animation: fadeInAnimation ease-in-out 1s forwards !important;
     animation-iteration-count: 1!important;
     animation-fill-mode: forwards !important;
@@ -16,7 +16,7 @@ html{font-family: 'Lato','Open-Sans',sans-serif,'Montserrat';}
     100% {
         opacity: 1;
      }
-}
+} */
 .fader    {
     animation: fadeInAnimation ease-in-out 1.2s forwards !important;
     animation-iteration-count: 1!important;
