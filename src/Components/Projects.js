@@ -96,7 +96,7 @@ const Projects = () => {
                   <p className='dets'> <span>1 Dec 2020  SIH 2020</span></p>
                   {
                     i===index?
-                    <div className="p-card" >
+                    <div className={i===index?'p-card smooth':'p-card'} >
                     <p className="p-desc">{projects[proj].description}</p>
                     <hr className='hr' />
                     <div>
