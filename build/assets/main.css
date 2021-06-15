@@ -1,6 +1,10 @@
 html {
   font-family: "Lato", "Open-Sans", sans-serif, "Montserrat";
 }
+/* #code-sel::selection {
+  color: red !important;
+  background-color: white !important;
+} */
 ::selection {
   color: white;
   background-color: #474849;

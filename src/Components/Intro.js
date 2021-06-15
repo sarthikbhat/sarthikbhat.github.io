@@ -28,30 +28,20 @@ const Intro = () => {
             {' '}<span className="upAnim" style={{ animationDelay: '0.166667s' }}>I</span><span className="upAnim" style={{ animationDelay: ' 0.2s' }}>'</span><span className="upAnim" style={{ animationDelay: '0.233333s' }}>m</span>
             {' '}<span className="upAnim" style={{ animationDelay: '0.3s' }}>S</span><span className="upAnim" style={{ animationDelay: '0.333333s' }}>a</span><span className="upAnim" style={{ animationDelay: '0.366667s' }}>r</span><span className="upAnim" style={{ animationDelay: ' 0.4s' }}>t</span><span className="upAnim" style={{ animationDelay: '0.433333s' }}>h</span><span className="upAnim" style={{ animationDelay: ' 0.466667s' }}>i</span><span className="upAnim" style={{ animationDelay: '0.5s' }}>k</span>
             {' '}<span className="upAnim" style={{ animationDelay: ' 0.566667s' }}>B</span><span className="upAnim" style={{ animationDelay: '0.6s' }}>h</span><span className="upAnim" style={{ animationDelay: '0.633333s' }}>a</span><span className="upAnim" style={{ animationDelay: '0.666667s' }}>t</span></h1>
-          {/* <h1 className='hey'>{("Hey! I'm Sarthik Bhat").split('').map((elm,index)=>{
-            return (
-              elm.trim()===0?
-              '  '
-              :
-              <span className="upAnim" style={{animationDelay:(index/30)+'s'}} key={index}>{elm}</span>
-              
-            )
-          })}</h1> */}
-          <div className="code-bg">
+          <div className="code-bg" id="code-sel">
             <div className="red" />
             <div className="yellow" />
             <div className="green" />
             <p className="intro-text">
               <span className="comment">{'//'} Some Text About Me</span>
               <br />
-            I'm a <span className="focus some">Final year</span> Computer Engineering student from <span className="focus marker">Dwarkadas J
-            Sanghvi College of Engineering</span>. <br />Well versed with <span className="focus keyword">Full Stack Web
-            Development</span>. I am an enthusiast and passionate about learning new
-            things.
+            I'm a <span className="focus some">Computer Engineer</span> from <span className="focus marker">Dwarkadas J
+            Sanghvi College of Engineering</span>. <br />Well versed with <span className="focus keyword">Full Stack Web and App development</span>. 
+            I love to do competitive coding and solve problems using technology.
             {/* Currently learning <span className="focus keyword">Machine Learning</span>  */}
-             I
-            am also passionate about competitive coding and writing. I am
-            currently focussed on <span className="focus keyword">Mobile App Development</span><span className="cursor"></span>
+            I'm also proficient in <span className="focus keyword">MERN stack, GraphQL, SQL and python</span>. <br/>I am an enthusiast and constantly learning new technologies.
+           
+            <span className="cursor"></span>
             </p >
           </div>
         </div>
