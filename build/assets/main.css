@@ -126,6 +126,8 @@ img {
   max-width: 25em;
   height: 90%;
   width: 110%;
+  border-radius: 50%;
+  margin-top: 20%;
 }
 .hey {
   font-size: calc(1.5rem + 1.5vw);
@@ -173,6 +175,7 @@ img {
   max-width: calc(14rem + 1vw);
   height: 100%;
   width: 100%;
+  border-radius: 50%;
 }
 .timeline .vertical-line {
   align-self: stretch;
