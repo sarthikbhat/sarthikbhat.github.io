@@ -1,8 +1,5 @@
 
 import me from "../images/me.png";
-import meWebp from "../images/me.webp";
-import meJp2 from "../images/me.jp2";
-import meJxr from "../images/me.jxr";
 import pp from "../images/pp.jfif"
 
 const Intro = () => {
@@ -14,7 +11,7 @@ const Intro = () => {
             <source className="me-small" width='100' height='100' alt='me-small' type='image/webp' srcSet={pp} />
             {/* <source className="me-small" width='100' height='100' alt='me-small' type='image/jxr' srcSet={meJxr} />
             <source className="me-small" width='100' height='100' alt='me-small' type='image/jp2' srcSet={meJp2} /> */}
-          <img className="me-small" width='100' height='100' alt='me-small' src={pp} />
+            <img className="me-small" width='100' height='100' alt='me-small' src={pp} />
           </picture>
         </div>
         <div className="">
@@ -25,7 +22,7 @@ const Intro = () => {
           </a>
         </div>
         <div className="col-8 intro-block">
-          <h1 className="hey"><span className="upAnim" style={{ animationDelay: '0s' }}>H</span><span className="upAnim" style={{ animationDelay: '0.0333333s' }}>e</span><span className="upAnim" style={{ animationDelay: '0.0666667s' }}>y</span><span className="jump" style={{ animationDelay: '1.2s' }}>!</span>
+          <h1 className="hey"><section className="hola-anim"><span className="upAnim" style={{ animationDelay: '0s' }}>H</span><span className="upAnim" style={{ animationDelay: '0.0333333s' }}>e</span><span className="upAnim" style={{ animationDelay: '0.0666667s' }}>y</span></section><span className="jump" style={{ animationDelay: '1.2s' }}>!</span>
             {' '}<span className="upAnim" style={{ animationDelay: '0.166667s' }}>I</span><span className="upAnim" style={{ animationDelay: ' 0.2s' }}>'</span><span className="upAnim" style={{ animationDelay: '0.233333s' }}>m</span>
             {' '}<span className="upAnim" style={{ animationDelay: '0.3s' }}>S</span><span className="upAnim" style={{ animationDelay: '0.333333s' }}>a</span><span className="upAnim" style={{ animationDelay: '0.366667s' }}>r</span><span className="upAnim" style={{ animationDelay: ' 0.4s' }}>t</span><span className="upAnim" style={{ animationDelay: '0.433333s' }}>h</span><span className="upAnim" style={{ animationDelay: ' 0.466667s' }}>i</span><span className="upAnim" style={{ animationDelay: '0.5s' }}>k</span>
             {' '}<span className="upAnim" style={{ animationDelay: ' 0.566667s' }}>B</span><span className="upAnim" style={{ animationDelay: '0.6s' }}>h</span><span className="upAnim" style={{ animationDelay: '0.633333s' }}>a</span><span className="upAnim" style={{ animationDelay: '0.666667s' }}>t</span></h1>
@@ -36,17 +33,17 @@ const Intro = () => {
             <p className="intro-text">
               <span className="comment">{'//'} Some Text About Me</span>
               <br />
-            I'm a <span className="focus some">Computer Engineer</span> from <span className="focus marker">Dwarkadas J
-            Sanghvi College of Engineering</span>. <br />
-            Currently Working as a  <span className="focus keyword">Senior Product Engineer at Larsen and Toubro Infotech</span>. I am
-            well versed with <span className="focus keyword">Full Stack Web and App development</span>. 
-            I love to do competitive coding and solve problems using technology.
-            {/* Currently learning <span className="focus keyword">Machine Learning</span>  */}
-            I'm also proficient in <span className="focus keyword">MERN stack, GraphQL, SQL and python</span>. <br/>I am an enthusiast and constantly learning new technologies.
-           
-            <span className="cursor"></span>
-            <br/>
-            <span className="comment">{'//'} Thank You</span>
+              I'm a <span className="focus some">Computer Engineer</span> from <span className="focus marker">Dwarkadas J
+                Sanghvi College of Engineering</span>. <br />
+              Currently Working as a  <span className="focus keyword">Senior Product Engineer at Larsen and Toubro Infotech</span>. I am
+              well versed with <span className="focus keyword">Full Stack Web and App development</span>.
+              I love to do competitive coding and solve problems using technology.
+              {/* Currently learning <span className="focus keyword">Machine Learning</span>  */}
+              I'm also proficient in <span className="focus keyword">MERN stack, GraphQL, SQL and python</span>. <br />I am an enthusiast and constantly learning new technologies.
+
+              <span className="cursor"></span>
+              <br />
+              <span className="comment">{'//'} Thank You</span>
             </p >
           </div>
         </div>

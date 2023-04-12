@@ -714,3 +714,30 @@ img {
     opacity: 1;
     animation: smooth 1s ease-in-out forwards;
 }
+
+.hola-anim{
+ display: inline-block;
+}
+
+.hola-anim:hover{
+  /* transform: rotate3d(1,1,1,360deg); */
+  animation: hola 1s ease-in;
+ }
+
+ @keyframes hola {
+  0%{
+    transform: rotate3d(1,1,1,0deg) scale(1);
+  }
+  25%{
+    transform: rotate3d(1,1,1,90deg) scale(0.5);
+  }
+  50%{
+    transform: rotate3d(1,1,1,180deg) scale(0);
+  }
+  75%{
+    transform: rotate3d(1,1,1,270deg) scale(0.5);
+  }
+  100%{
+    transform: rotate3d(1,1,1,360deg) scale(1);
+  }
+}

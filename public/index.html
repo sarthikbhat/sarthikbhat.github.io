@@ -59,5 +59,14 @@
       src="https://kit.fontawesome.com/d2680074f2.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      compiler.hooks.normalModuleFactory.tap('MyPlugin', (factory) => {
+  factory.hooks.parser
+    .for('javascript/auto')
+    .tap('MyPlugin', (parser, options) => {
+      parser.hooks.someHook.tap(/* ... */);
+    });
+});
+    </script>
   </body>
 </html>
