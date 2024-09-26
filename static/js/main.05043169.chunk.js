@@ -37,7 +37,7 @@
                             }),
                             Object(r.jsxs)("span", {
                               children: [
-                                Object(r.jsx)("h5", { className: "designation", children: "Software Developer" }),
+                                Object(r.jsx)("h5", { className: "designation", children: "Software Development Intern" }),
                                 " ",
                                 Object(r.jsx)("p", { className: "ese", children: "June 2020 - January 2021" }),
                               ],
@@ -113,7 +113,7 @@
                             Object(r.jsx)("h5", { children: "Preptick" }),
                             Object(r.jsxs)("span", {
                               children: [
-                                Object(r.jsx)("h5", { className: "designation", children: "Web Developer" }),
+                                Object(r.jsx)("h5", { className: "designation", children: "Web Development Intern" }),
                                 " ",
                                 Object(r.jsx)("p", { className: "ese", children: "July 2019 - October 2019" }),
                               ],
@@ -123,7 +123,7 @@
                         Object(r.jsxs)("div", {
                           className: "positions",
                           children: [
-                            Object(r.jsx)("p", { className: "mx-0 my-1 work", children: "\u2022 Developed the front-end of company's website using React JS." }),
+                            Object(r.jsx)("p", { className: "mx-0 my-1 work", children: "\u2022 Developed company website using React." }),
                             Object(r.jsx)("p", { className: "mx-0 my-1 work", children: "\u2022 Assisted in integrating the front end with MySQL and Ruby on Rails Environment" }),
                           ],
                         }),
@@ -356,7 +356,7 @@
                             Object(r.jsx)("span", { className: "focus keyword", children: "Frontend Web development" }),
                             ". I love to solve problems using technology.",
                             "I'm also proficient in ",
-                            Object(r.jsx)("span", { className: "focus keyword", children: "ReactJS, Angular, NextJs, Javascript, Typescript, MEAN Stack, MERN stack and java." }),
+                            Object(r.jsx)("span", { className: "focus keyword", children: "ReactJS, Angular, NextJs, Javascript, Typescript, MEAN Stack, MERN stack and java" }),
                             ". ",
                             Object(r.jsx)("br", {}),
                             "I am an enthusiast and constantly learning new technologies.",
@@ -436,7 +436,7 @@
           }
         },
         x = function () {
-          var e = c.a.useState("Coptime"),
+          var e = c.a.useState("KanBan Board"),
             s = Object(b.a)(e, 2),
             a = s[0],
             t = s[1],
@@ -523,7 +523,7 @@
                                   Object(r.jsx)("h5", { className: "ts", children: "Tech Stack" }),
                                   Object(r.jsx)("div", {
                                     className: "d-flex stack",
-                                    children: ["ReactJs", "ExpressJs", "Python", "MongoDb"].map(function (e, s) {
+                                    children: p[a].tags.map(function (e, s) {
                                       return Object(r.jsx)("div", { className: "m-1", children: e }, s);
                                     }),
                                   }),
@@ -580,7 +580,7 @@
                                             Object(r.jsx)("h5", { className: "ts", children: "Tech Stack" }),
                                             Object(r.jsx)("div", {
                                               className: "d-flex stack",
-                                              children: ["ReactJs", "ExpressJs", "Python", "MongoDb"].map(function (e, s) {
+                                              children: p[a].tags.map(function (e, s) {
                                                 return Object(r.jsx)("div", { className: "m-1", children: e }, s);
                                               }),
                                             }),
