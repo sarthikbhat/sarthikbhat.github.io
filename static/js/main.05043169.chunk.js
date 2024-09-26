@@ -47,9 +47,8 @@
                         Object(r.jsxs)("div", {
                           className: "positions",
                           children: [
-                            Object(r.jsx)("p", { className: "mx-0 my-1 work", children: "\u2022 Created the android and iOS app for the Big Boy Toyz Ltd which is a luxury car resale brand" }),
-                            Object(r.jsx)("p", { className: "mx-0 my-1 work", children: "\u2022 Worked on obfuscating the code and optimizing the size of the app." }),
-                            Object(r.jsx)("p", { className: "mx-0 my-1 work", children: "\u2022 Decreasing the page load time of their new cars website through optimizing the API calls in NodeJs." }),
+                            Object(r.jsx)("p", { className: "mx-0 my-1 work", children: "\u2022 Built the android and iOS app for the Big Boy Toyz Ltd which is a luxury car resale brand" }),
+                            Object(r.jsx)("p", { className: "mx-0 my-1 work", children: "\u2022 Developed the company portfolio website using React which was featured for best 'Engineering & Design' on 'awwwards.com''" }),
                           ],
                         }),
                         Object(r.jsx)("div", {
@@ -93,20 +92,10 @@
                                   target: "_BLANK",
                                   rel: " noopener noreferrer",
                                   className: "no-link",
-                                  href: "https://us.weareaddictives.com/",
+                                  href: "https://www.theaddictivemedia.com/",
                                   children: "Addictive Media Website",
                                 }),
-                              }),
-                              Object(r.jsx)("div", {
-                                className: "m-1 mx-2",
-                                children: Object(r.jsx)("a", {
-                                  target: "_BLANK",
-                                  rel: " noopener noreferrer",
-                                  className: "no-link",
-                                  href: "https://www.weareaddictives.com/blogs",
-                                  children: "Addictive Media Blogs",
-                                }),
-                              }),
+                              })
                             ],
                           }),
                         }),
@@ -138,6 +127,24 @@
                             Object(r.jsx)("p", { className: "mx-0 my-1 work", children: "\u2022 Assisted in integrating the front end with MySQL and Ruby on Rails Environment" }),
                           ],
                         }),
+                        Object(r.jsx)("div", {
+                            className: "p-tags my-3",
+                            children: Object(r.jsxs)("div", {
+                              className: "d-flex",
+                              children: [
+                                Object(r.jsx)("div", {
+                                  className: "m-1",
+                                  children: Object(r.jsx)("a", {
+                                    target: "_BLANK",
+                                    rel: " noopener noreferrer",
+                                    className: "no-link",
+                                    href: "https://prepfully.com/",
+                                    children: "Prepfully.com",
+                                  }),
+                                })
+                              ],
+                            }),
+                          }),
                       ],
                     }),
                   }),
@@ -171,7 +178,7 @@
                     }),
                     Object(r.jsx)("li", {
                       children: Object(r.jsx)("a", {
-                        href: "https://www.linkedin.com/in/sarthik-bhat-8333a6169/",
+                        href: "https://www.linkedin.com/in/sarthik-bhat/",
                         target: "_BLANK",
                         rel: "noopener noreferrer",
                         children: Object(r.jsx)("i", { className: "fab fa-linkedin fa-x social-icons mx-2" }),
@@ -349,7 +356,7 @@
                             Object(r.jsx)("span", { className: "focus keyword", children: "Frontend Web development" }),
                             ". I love to solve problems using technology.",
                             "I'm also proficient in ",
-                            Object(r.jsx)("span", { className: "focus keyword", children: "ReactJS, Angular, NextJs, MEAN Stack, MERN stack and java." }),
+                            Object(r.jsx)("span", { className: "focus keyword", children: "ReactJS, Angular, NextJs, Javascript, Typescript, MEAN Stack, MERN stack and java." }),
                             ". ",
                             Object(r.jsx)("br", {}),
                             "I am an enthusiast and constantly learning new technologies.",
@@ -379,12 +386,20 @@
         },
         b = a(3),
         p = {
+          "KanBan Board": {
+            name: "KanBan Board",
+            link: "https://github.com/sarthikbhat/kanban-board",
+            description:
+              "Kanban is a comprehensive web  application to facilitate agile software delivery methodologies. It incorporates features like user authentication, project creation, task addition, task specific comments and collaboration.",
+            tags: ["ReactJs", "NextJs", "ExpressJS", "MongoDb", "PSQL", "Tailwind CSS", "Typescript"],
+            extra: "June 2024 \xb7 Personal Project",
+          },
           Coptime: {
             name: "Coptime",
             link: "https://github.com/sarthikbhat/CopTime",
             description:
               "The project was to automate and digitalize the complaint filing process in a police station as well as an emergency SOS to notify the nearest police stations. It was built using react native and web dashboard",
-            tags: ["ReactJs", "React Native", "ExpressJS", "MongoDb", "SQL"],
+            tags: ["ReactJs", "React Native", "ExpressJS", "MongoDb", "Javascript"],
             extra: "February 2020 \xb7 SIH 2020",
           },
           Jobbify: {
@@ -400,7 +415,7 @@
             link: "https://github.com/sarthikbhat/SIH-Water.io",
             description:
               "An interactive webapp to predict groundwater level for the user specified region, for upcoming 10 years with an accuracy of 90%,(ARIMA Model). The data was scraped from data.gov.in using Flask.",
-            tags: ["ReactJs", "ExpressJs", "Machine Learning", "MongoDb"],
+            tags: ["ReactJs", "Javascript", "HTML", "CSS"],
             extra: "February 2019 \xb7 SIH 2019",
           },
           NGOSolutions: {
@@ -408,7 +423,7 @@
             link: "https://github.com/sarthikbhat/DJ_ACM",
             description:
               "Developed a complete web app for completely digitalizing the registration of volunteers and other management operations. Appropriate emails for validation were sent. A certificate (in PDF format) was also generated.",
-            tags: ["ReactJs", "ExpressJs", "Python", "MongoDb"],
+            tags: ["ReactJs", "Javascript", "HTML", "CSS"],
             extra: "March 2019",
           },
           Motherboard: {
@@ -416,17 +431,9 @@
             link: "https://github.com/sarthikbhat/Motherboard",
             description:
               "Created a student-teacher portal for enhancing the learning process with a WhatsApp type interface for sharing important information , attendance manager and a grievances portal.It is a real time chat application.",
-            tags: ["ReactJs", "ExpressJs", "GraphQL", "Socket.io", "SQL"],
+            tags: ["ReactJs", "Javascript", "HTML", "CSS"],
             extra: "May 2019",
-          },
-          WeatherApp: {
-            name: "Weather App",
-            link: "https://github.com/sarthikbhat/WeatherApp",
-            description:
-              "This is a basic weather and timezone app with various features like bookmarking a country/region for easier future access. It was a colege mini as well as a self learning project to integrate react with Django using DRF.",
-            tags: ["ReactJs", "Django", "Python"],
-            extra: "May 2019",
-          },
+          }
         },
         x = function () {
           var e = c.a.useState("Coptime"),
