@@ -48,7 +48,10 @@
                           className: "positions",
                           children: [
                             Object(r.jsx)("p", { className: "mx-0 my-1 work", children: "\u2022 Built the android and iOS app for the Big Boy Toyz Ltd which is a luxury car resale brand" }),
-                            Object(r.jsx)("p", { className: "mx-0 my-1 work", children: "\u2022 Developed the company portfolio website using React which was featured for best 'Engineering & Design' on 'awwwards.com''" }),
+                            Object(r.jsx)("p", {
+                              className: "mx-0 my-1 work",
+                              children: "\u2022 Developed the company portfolio website using React which was featured for best 'Engineering & Design' on 'awwwards.com''",
+                            }),
                           ],
                         }),
                         Object(r.jsx)("div", {
@@ -95,7 +98,7 @@
                                   href: "https://www.theaddictivemedia.com/",
                                   children: "Addictive Media Website",
                                 }),
-                              })
+                              }),
                             ],
                           }),
                         }),
@@ -128,23 +131,23 @@
                           ],
                         }),
                         Object(r.jsx)("div", {
-                            className: "p-tags my-3",
-                            children: Object(r.jsxs)("div", {
-                              className: "d-flex",
-                              children: [
-                                Object(r.jsx)("div", {
-                                  className: "m-1",
-                                  children: Object(r.jsx)("a", {
-                                    target: "_BLANK",
-                                    rel: " noopener noreferrer",
-                                    className: "no-link",
-                                    href: "https://prepfully.com/",
-                                    children: "Prepfully.com",
-                                  }),
-                                })
-                              ],
-                            }),
+                          className: "p-tags my-3",
+                          children: Object(r.jsxs)("div", {
+                            className: "d-flex",
+                            children: [
+                              Object(r.jsx)("div", {
+                                className: "m-1",
+                                children: Object(r.jsx)("a", {
+                                  target: "_BLANK",
+                                  rel: " noopener noreferrer",
+                                  className: "no-link",
+                                  href: "https://prepfully.com/",
+                                  children: "Prepfully.com",
+                                }),
+                              }),
+                            ],
                           }),
+                        }),
                       ],
                     }),
                   }),
@@ -391,7 +394,7 @@
             link: "https://github.com/sarthikbhat/kanban-board",
             description:
               "Kanban is a comprehensive web  application to facilitate agile software delivery methodologies. It incorporates features like user authentication, project creation, task addition, task specific comments and collaboration.",
-            tags: ["ReactJs", "NextJs", "ExpressJS", "MongoDb", "PSQL", "Tailwind CSS", "Typescript"],
+            tags: ["ReactJs", "NextJs", "Tailwind CSS", "Typescript", "ExpressJS", "PSQL"],
             extra: "June 2024 \xb7 Personal Project",
           },
           Coptime: {
@@ -399,7 +402,7 @@
             link: "https://github.com/sarthikbhat/CopTime",
             description:
               "The project was to automate and digitalize the complaint filing process in a police station as well as an emergency SOS to notify the nearest police stations. It was built using react native and web dashboard",
-            tags: ["ReactJs", "React Native", "ExpressJS", "MongoDb", "Javascript"],
+            tags: ["ReactJs", "React Native", "Javascript", "HTML", "CSS", "ExpressJS"],
             extra: "February 2020 \xb7 SIH 2020",
           },
           Jobbify: {
@@ -407,8 +410,8 @@
             link: "https://github.com/sarthikbhat/Lunatic_Byte_Jobbify",
             description:
               "Jobbify is an ML and AI powered smart Webapp and Mobile Application to find the best candidate in recruitment process.It acts as complete solution to already long process. NLP was used to ease the candidate finding process ",
-            tags: ["ReactJs", "React Native", "Flask", "NLP", "SQLite", "Python"],
-            extra: "January  2020",
+            tags: ["ReactJs", "React Native", "Javascript", "HTML", "CSS"],
+            extra: "January  2020 \xb7 College Project",
           },
           Waterio: {
             name: "Water.io",
@@ -424,7 +427,7 @@
             description:
               "Developed a complete web app for completely digitalizing the registration of volunteers and other management operations. Appropriate emails for validation were sent. A certificate (in PDF format) was also generated.",
             tags: ["ReactJs", "Javascript", "HTML", "CSS"],
-            extra: "March 2019",
+            extra: "March 2019 \xb7 College Project",
           },
           Motherboard: {
             name: "Motherboard",
@@ -432,8 +435,8 @@
             description:
               "Created a student-teacher portal for enhancing the learning process with a WhatsApp type interface for sharing important information , attendance manager and a grievances portal.It is a real time chat application.",
             tags: ["ReactJs", "Javascript", "HTML", "CSS"],
-            extra: "May 2019",
-          }
+            extra: "May 2019 \xb7 College Project",
+          },
         },
         x = function () {
           var e = c.a.useState("KanBan Board"),
