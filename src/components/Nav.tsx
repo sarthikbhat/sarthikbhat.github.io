@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react'
 import type { Content } from '../lib/types'
 import { Icon } from './icons'
 import { useMagnet } from '../hooks/useMagnet'
-import { ThemeSwitch } from './ThemeSwitch'
 
 const LINKS = [
   { href: '#tray', label: 'work', cur: 'look' },
