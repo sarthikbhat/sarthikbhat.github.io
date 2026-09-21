@@ -1,0 +1,321 @@
+{
+  "identity": {
+    "name": "Sarthik Bhat",
+    "initials": "S.B",
+    "role": "Frontend Engineer",
+    "location": "Mumbai",
+    "email": "bhatsarthik28@gmail.com",
+    "resumeUrl": "#top",
+    "footerNote": "hand-built in react, no framework was harmed",
+    "year": "2026"
+  },
+  "hero": {
+    "eyebrow": "SARTHIK BHAT - FRONTEND ENGINEER, MUMBAI",
+    "line1": "I MAKE THE WEB",
+    "line2": "FEEL LIKE",
+    "line3": "SOMETHING.",
+    "badge": "5+ yrs\n2 product teams\n1 keyboard",
+    "blurb": "5+ years building production web applications across LTIMindtree and BrowserStack. I work across React and TypeScript with a focus on frontend architecture, performance, observability and developer workflows."
+  },
+  "about": {
+    "headingPre": "I like building the part ",
+    "headingAccent": "users actually touch",
+    "headingPost": " and engineers have to maintain.",
+    "p1": "Five years building production software across LTIMindtree and BrowserStack. I've worked across frontend, backend and developer tooling - from React and Angular interfaces to Java microservices, browser extensions, testing infrastructure and observability.",
+    "p2": "I'm happiest when a messy problem becomes a simple interface, a slow workflow gets faster, or a production issue becomes a metric we can actually understand."
+  },
+  "contact": {
+    "eyebrow": "ONE TICKET, ADMIT ONE PROJECT",
+    "headingPre": "Got something that needs ",
+    "headingAccent": "shipping?",
+    "blurb": "or a second opinion on your render tree. I reply within a day, usually with too many questions."
+  },
+  "tags": [
+    "TypeScript",
+    "React",
+    "Go",
+    "Postgres",
+    "WebGL",
+    "k8s"
+  ],
+  "projects": [
+    {
+      "id": "kanban",
+      "name": "KanBan Board",
+      "kind": "SDLC",
+      "year": "2023",
+      "blurb": "Kanban is a comprehensive web application to facilitate agile software delivery methodologies. It incorporates features like user authentication, project creation, task addition, task specific comments and collaboration.",
+      "snippet": "POST /projects\n→ create project\n→ add tasks\n→ comment\n→ collaborate",
+      "hard": "The challenging part was keeping task updates, comments, and collaboration consistent across users while making the workflow feel simple and responsive.",
+      "stats": [
+        {
+          "v": "RBAC",
+          "k": "user access"
+        },
+        {
+          "v": "Real-time",
+          "k": "collaboration"
+        },
+        {
+          "v": "CRUD",
+          "k": "task workflow"
+        }
+      ]
+    },
+    {
+      "id": "coptime",
+      "name": "Coptime",
+      "kind": "SIH 2020",
+      "year": "2020",
+      "blurb": "The project was to automate and digitalize the complaint filing process in a police station as well as an emergency SOS to notify the nearest police stations. It was built using react native and web dashboard",
+      "snippet": "SOS → locate nearest station\ncomplaint → submit → track\nstation → dashboard → respond",
+      "hard": "The difficult part was connecting a mobile-first complaint and SOS workflow with a web dashboard while keeping emergency information clear and actionable for police personnel.",
+      "stats": [
+        {
+          "v": "2",
+          "k": "platforms"
+        },
+        {
+          "v": "SOS",
+          "k": "emergency alerts"
+        },
+        {
+          "v": "Live",
+          "k": "complaint tracking"
+        }
+      ]
+    },
+    {
+      "id": "motherboard",
+      "name": "Motherboard",
+      "kind": "side project",
+      "year": "2020",
+      "blurb": "Created a student-teacher portal for enhancing the learning process with a WhatsApp type interface for sharing important information, attendance manager and a grievances portal. It is a real time chat application.",
+      "snippet": "message → realtime sync\nattendance → mark → review\ngrievance → submit → resolve",
+      "hard": "The challenge was bringing chat, attendance, announcements, and grievances into one interface without making the portal feel like a collection of disconnected tools.",
+      "stats": [
+        {
+          "v": "Realtime",
+          "k": "chat"
+        },
+        {
+          "v": "3+",
+          "k": "core modules"
+        },
+        {
+          "v": "RBAC",
+          "k": "student & teacher"
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "name": "Water.io",
+      "kind": "SIH 2019",
+      "year": "2019",
+      "blurb": "An interactive webapp to predict groundwater level for the user specified region, for upcoming 10 years with an accuracy of 90%,(ARIMA Model). The data was scraped from data.gov.in using Flask.",
+      "snippet": "data.gov.in → scrape → clean\n→ ARIMA → forecast → visualize",
+      "hard": "The hardest part was turning inconsistent groundwater datasets into a reliable time series that could be fed into an ARIMA model and presented as an understandable regional forecast.",
+      "stats": [
+        {
+          "v": "10yr",
+          "k": "forecast horizon"
+        },
+        {
+          "v": "90%",
+          "k": "reported accuracy"
+        },
+        {
+          "v": "ARIMA",
+          "k": "prediction model"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "rot": "-2.2",
+      "tag": "THE RULE",
+      "body": "If an animation cannot be cancelled mid-flight, it is a cutscene, and nobody asked for a cutscene."
+    },
+    {
+      "rot": "1.8",
+      "tag": "THE HABIT",
+      "body": "Every effect ships with a frame budget. Nice is not a metric. Neither is smooth."
+    },
+    {
+      "rot": "-1.2",
+      "tag": "THE TELL",
+      "body": "Show me your empty states and I can tell you how the rest of the product was built."
+    }
+  ],
+  "stops": [
+    {
+      "when": "July 2019 - October 2019",
+      "role": "Web Development Intern",
+      "company": "Preptick (Prepfully)",
+      "detail": "Was amongst the early developers and worked on the initial website and core product features."
+    },
+    {
+      "when": "2020 - 2021",
+      "role": "Software Development Intern",
+      "company": "Addictive Media",
+      "detail": "Built Android and iOS applications for Big Boy Toyz, a luxury car resale brand, and developed the company's portfolio website, which was featured for Engineering & Design on Awwwards."
+    },
+    {
+      "when": "July 2021 - 2024",
+      "role": "Senior Product Engineer",
+      "company": "LTIMindtree",
+      "detail": "Worked on Canvas, an AI/ML-powered platform, building production features across React, Angular, Java, Spring Boot, PostgreSQL and MongoDB. Designed and developed 15+ UI screens, built a Chrome extension and Java agent to streamline regression testing across 2,000+ test cases, reducing testing time by 40%."
+    },
+    {
+      "when": "2024 - NOW",
+      "role": "Frontend Engineer",
+      "company": "BrowserStack",
+      "detail": "Building Test Management for Jira, a Jira-native test management platform within BrowserStack. Driving frontend development with React and TypeScript while contributing to application architecture, performance optimization, observability and CI/CD workflows. Focused on building scalable product experiences and improving how application performance and production issues are measured, diagnosed and resolved."
+    }
+  ],
+  "posts": [
+    {
+      "rot": "-1.6",
+      "date": "AUG 2026",
+      "title": "Your virtual list is lying to you",
+      "dek": "Measured rows beat estimated ones, and the three bugs you get free when they disagree."
+    },
+    {
+      "rot": "1.4",
+      "date": "JUN 2026",
+      "title": "Springs beat easing curves",
+      "dek": "Forty lines of integrator you can paste anywhere, and why it feels alive."
+    },
+    {
+      "rot": "-0.9",
+      "date": "MAR 2026",
+      "title": "Design tokens are a build problem",
+      "dek": "Stop shipping a theme object. Ship generated CSS and let the cascade work."
+    },
+    {
+      "rot": "2.1",
+      "date": "JAN 2026",
+      "title": "The refactor nobody approved",
+      "dek": "Deleting 8,000 lines in pieces small enough that review stays pleasant."
+    }
+  ],
+  "stack": [
+    {
+      "group": "Interface",
+      "note": "daily",
+      "items": [
+        {
+          "n": "TypeScript",
+          "y": "5 yrs"
+        },
+        {
+          "n": "React",
+          "y": "5 yrs"
+        },
+        {
+          "n": "CSS architecture",
+          "y": "5 yrs"
+        },
+        {
+          "n": "Motion / springs",
+          "y": "3 yrs"
+        },
+        {
+          "n": "Accessibility (WCAG 2.2)",
+          "y": "4 yrs"
+        }
+      ]
+    },
+    {
+      "group": "Systems",
+      "note": "weekly",
+      "items": [
+        {
+          "n": "Node",
+          "y": "5 yrs"
+        },
+        {
+          "n": "Postgres",
+          "y": "4 yrs"
+        },
+        {
+          "n": "REST / GraphQL",
+          "y": "4 yrs"
+        },
+        {
+          "n": "Schema + migrations",
+          "y": "3 yrs"
+        }
+      ]
+    },
+    {
+      "group": "Platform",
+      "note": "monthly",
+      "items": [
+        {
+          "n": "Docker",
+          "y": "4 yrs"
+        },
+        {
+          "n": "GitHub Actions",
+          "y": "4 yrs"
+        },
+        {
+          "n": "Kubernetes",
+          "y": "2 yrs"
+        },
+        {
+          "n": "Jenkins",
+          "y": "2 yrs"
+        }
+      ]
+    },
+    {
+      "group": "Sharp edges",
+      "note": "when it matters",
+      "items": [
+        {
+          "n": "Canvas / WebGL",
+          "y": "3 yrs"
+        },
+        {
+          "n": "Perf budgets",
+          "y": "3 yrs"
+        },
+        {
+          "n": "Incident response",
+          "y": "3 yrs"
+        },
+        {
+          "n": "Mentoring by pairing",
+          "y": "2 yrs"
+        }
+      ]
+    }
+  ],
+  "socials": [
+    {
+      "label": "GitHub",
+      "handle": "@sarthikbhat",
+      "href": "https://github.com/sarthikbhat",
+      "icon": "github",
+      "nav": true
+    },
+    {
+      "label": "LinkedIn",
+      "handle": "/in/sarthik-bhat",
+      "href": "https://linkedin.com/in/sarthik-bhat",
+      "icon": "linkedin",
+      "nav": true
+    },
+    {
+      "label": "Email",
+      "handle": "bhatsarthik28@gmail.com",
+      "href": "mailto:bhatsarthik28@gmail.com",
+      "icon": "email",
+      "nav": false
+    }
+  ]
+}
