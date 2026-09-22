@@ -1,16 +1,11 @@
 import { motion, useReducedMotion, type HTMLMotionProps } from 'framer-motion'
 
 type RevealProps = HTMLMotionProps<'div'> & {
-  /** persistent resting rotation in degrees (cards on the desk / notes) */
   rot?: number
-  /** stagger delay in seconds */
   delay?: number
-  /** lift + settle on hover */
   hover?: boolean
 }
 
-/** Scroll-triggered entrance built on framer-motion. Handles the rotate-and-rest
- *  cards so the persistent tilt and the reveal share one transform writer. */
 export function Reveal({
   rot = 0,
   delay = 0,

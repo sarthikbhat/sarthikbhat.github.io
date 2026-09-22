@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useReducedMotion } from 'framer-motion'
 
-/** Animates the numeric part of a stat string (e.g. "40k/s", "1.4mb", "0")
- *  from zero to its value when `active` turns true. Non-numeric parts are kept. */
 export function CountUp({ value, active }: { value: string; active: boolean }) {
   const reduce = useReducedMotion()
   const m = value.match(/[\d.]+/)
@@ -43,7 +41,6 @@ export function CountUp({ value, active }: { value: string; active: boolean }) {
     }
     raf = requestAnimationFrame(tick)
     return () => cancelAnimationFrame(raf)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [active, value, reduce])
 
   return <>{display}</>

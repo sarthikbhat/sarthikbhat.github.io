@@ -1,9 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { getPalette } from '../lib/theme'
 
-/** Springy custom cursor that morphs into a labelled pill over interactive
- *  elements (label read from their `data-cur` attribute). Vanilla RAF - this
- *  is not something framer-motion is built for. */
 export function Cursor() {
   const dotRef = useRef<HTMLDivElement>(null)
   const labelRef = useRef<HTMLSpanElement>(null)

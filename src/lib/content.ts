@@ -1,14 +1,5 @@
 import type { Content } from './types'
 
-/**
- * Where the editable content is loaded from at runtime.
- *
- * Phase 1 (now): the bundled `/content.json` in `public/`.
- * Phase 2 (no-redeploy edits): set VITE_CONTENT_URL to an npoint.io / jsonbin
- * raw URL. Edit the JSON there, and the live site picks it up on next load -
- * no rebuild, no redeploy. The `defaults` below always render if the fetch
- * fails, so the site never breaks.
- */
 export const CONTENT_URL: string =
   import.meta.env.VITE_CONTENT_URL ?? '/content.json'
 
@@ -83,15 +74,13 @@ export const defaults: Content = {
   ],
 }
 
-/** Fetch content at runtime, falling back to bundled defaults per top-level key. */
 export async function loadContent(): Promise<Content> {
   try {
     const res = await fetch(CONTENT_URL, { cache: 'no-cache' })
     if (!res.ok) throw new Error(`content fetch ${res.status}`)
     const data = (await res.json()) as Partial<Content>
     return { ...defaults, ...data }
-  } catch (err) {
-    console.warn('[content] using bundled defaults:', err)
+  } catch {
     return defaults
   }
 }

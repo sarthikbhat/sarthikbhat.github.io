@@ -72,9 +72,6 @@ export function Tray({
       bodies = []
       const nBig = projects.length
       const nChip = CHIPS.length
-      // size coins so the row of them fits the box width without spawn overlap
-      // (overlapping spawns fling coins out the top and they never settle),
-      // and so they fit the box height too
       const fitW = W / (2.3 * (nBig + 1))
       const fitH = Math.sqrt((W * H * 0.2) / (Math.PI * (nBig + 0.18 * nChip)))
       const big = Math.max(34, Math.min(94, fitW, fitH))

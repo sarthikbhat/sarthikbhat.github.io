@@ -1,5 +1,4 @@
 :root {
-  /* inkwell - default theme (see src/lib/theme.ts) */
   --paper: #e3e7e6;
   --ink: #131a22;
   --a1: #c25e00;
@@ -93,7 +92,6 @@ button {
   position: relative;
 }
 
-/* ---------- decorative ---------- */
 .noise {
   position: fixed;
   inset: 0;
@@ -133,7 +131,6 @@ button {
   transition: opacity 0.15s;
 }
 
-/* ---------- header ---------- */
 .bar {
   position: fixed;
   top: 0;
@@ -223,7 +220,6 @@ button {
   display: none;
 }
 
-/* ---------- hero ---------- */
 .hero {
   position: relative;
   overflow: hidden;
@@ -351,7 +347,6 @@ button {
   transform: translateY(-3px) rotate(-2deg);
 }
 
-/* ---------- shared buttons ---------- */
 .btn {
   padding: 9px 15px;
   border: 2px solid var(--ink);
@@ -374,7 +369,6 @@ button {
   background: var(--card);
 }
 
-/* ---------- tray ---------- */
 .tray {
   position: relative;
   padding: clamp(36px, 5vw, 64px) clamp(16px, 4vw, 48px) clamp(40px, 5vw, 72px);
@@ -459,7 +453,6 @@ button {
   transform: translateY(-2px);
 }
 
-/* ---------- kit ---------- */
 .kit {
   position: relative;
   padding: clamp(40px, 6vw, 80px) clamp(16px, 4vw, 48px);
@@ -546,7 +539,6 @@ button {
   color: var(--m1);
 }
 
-/* ---------- sheets ---------- */
 .scrim {
   position: fixed;
   inset: 0;
@@ -657,7 +649,6 @@ button {
   text-wrap: pretty;
 }
 
-/* ---------- about ---------- */
 .about {
   position: relative;
   padding: clamp(40px, 6vw, 88px) clamp(16px, 4vw, 48px);
@@ -741,7 +732,6 @@ button {
   text-wrap: pretty;
 }
 
-/* ---------- route ---------- */
 .route {
   position: relative;
   height: 300vh;
@@ -867,7 +857,6 @@ button {
   text-wrap: pretty;
 }
 
-/* ---------- desk ---------- */
 .desk {
   position: relative;
   padding: clamp(40px, 6vw, 84px) clamp(16px, 4vw, 48px);
@@ -997,7 +986,6 @@ button {
   color: var(--a1);
 }
 
-/* ---------- contact ---------- */
 .contact {
   position: relative;
   padding: clamp(48px, 7vw, 100px) clamp(16px, 4vw, 48px) clamp(30px, 4vw, 56px);
@@ -1145,7 +1133,6 @@ button {
   box-shadow: 0 0 0 2px var(--paper), 0 0 0 4px var(--ink);
 }
 
-/* ---------- mobile nav ---------- */
 .nav-toggle {
   display: none;
   align-items: center;
@@ -1224,7 +1211,6 @@ button {
   }
 }
 
-/* ---------- header theme control (top, for discoverability) ---------- */
 .bar-left {
   display: flex;
   align-items: center;
@@ -1237,7 +1223,6 @@ button {
   gap: 6px;
 }
 
-/* ---------- mobile route: vertical stack instead of horizontal scroll ---------- */
 @media (max-width: 720px) {
   .badge {
     position: static;
@@ -1261,7 +1246,6 @@ button {
   }
 }
 
-/* ---------- mobile route: animated vertical timeline ---------- */
 .mroute {
   display: grid;
   grid-template-columns: 26px 1fr;
@@ -1328,7 +1312,6 @@ button {
   background: var(--paper);
 }
 
-/* hide custom cursor on touch / coarse pointers */
 @media (hover: none), (pointer: coarse) {
   .cursor {
     display: none;

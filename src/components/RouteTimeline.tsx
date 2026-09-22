@@ -4,9 +4,6 @@ import type { Stop } from '../lib/types'
 import { getPalette, onTheme } from '../lib/theme'
 import { useIsMobile } from '../hooks/useIsMobile'
 
-/** Mobile: a vertical timeline whose rail fills and whose train travels down as
- *  you scroll, with each stop sliding in - the same "train on a route" idea as
- *  the desktop horizontal version, reoriented so it never scroll-jacks. */
 function RouteMobile({ stops }: { stops: Stop[] }) {
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({

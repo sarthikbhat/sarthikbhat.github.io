@@ -1,7 +1,5 @@
 import { useRef, type PointerEvent } from 'react'
 
-/** Pointer-follow "magnet" effect for buttons. Vanilla transform so it never
- *  fights framer-motion (magnet elements are intentionally not motion nodes). */
 export function useMagnet<T extends HTMLElement>(strength = { x: 0.3, y: 0.45 }) {
   const ref = useRef<T>(null)
 

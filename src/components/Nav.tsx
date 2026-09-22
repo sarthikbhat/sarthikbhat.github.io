@@ -43,7 +43,6 @@ export function Nav({ content }: { content: Content }) {
           <span className="logo-mark" />
           {content.identity.initials}
         </a>
-        {/* <ThemeSwitch compact /> */}
       </div>
 
       <nav className="nav">
