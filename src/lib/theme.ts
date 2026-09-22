@@ -44,8 +44,6 @@ let currentName: ThemeName = DEFAULT_THEME
 let current: Palette = THEMES[DEFAULT_THEME]
 const listeners = new Set<(name: ThemeName, p: Palette) => void>()
 
-/** Live palette - the canvas tray, cursor and route read this so they follow
- *  the active theme without re-mounting. */
 export function getPalette(): Palette {
   return current
 }
@@ -59,34 +57,26 @@ export function onTheme(fn: (name: ThemeName, p: Palette) => void): () => void {
 }
 
 export function applyTheme(name: ThemeName): void {
-  const p = THEMES[name] ?? THEMES.clay
-  currentName = name in THEMES ? name : 'clay'
+  const p = THEMES[name]
+  currentName = name
   current = p
   const r = document.documentElement.style
-    ; (Object.keys(p) as (keyof Palette)[]).forEach((k) =>
-      r.setProperty(`--${k}`, p[k]),
-    )
-  try {
-    localStorage.setItem(KEY, currentName)
-  } catch {
-    /* ignore */
+  for (const k of Object.keys(p) as (keyof Palette)[]) {
+    r.setProperty(`--${k}`, p[k])
   }
-  listeners.forEach((l) => l(currentName, p))
+  try {
+    localStorage.setItem(KEY, name)
+  } catch {}
+  listeners.forEach((l) => l(name, p))
 }
 
-/** Restore a saved theme on load (clay is already the CSS :root default). */
 export function initTheme(): void {
   let saved: string | null = null
   try {
     saved = localStorage.getItem(KEY)
-  } catch {
-    /* ignore */
-  }
+  } catch {}
   if (saved && saved in THEMES) applyTheme(saved as ThemeName)
 }
-
-/** Backwards-compatible static reference to the default palette. */
-export const PAL = THEMES.clay
 
 export function lum(hex: string): number {
   const n = parseInt(hex.slice(1), 16)
