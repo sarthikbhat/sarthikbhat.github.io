@@ -1,10 +1,12 @@
 import { useEffect, useRef } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 import type { Content } from '../lib/types'
+import { ShaderField } from '../gl/ShaderField'
 
 export function Hero({ content }: { content: Content }) {
   const { hero, tags, identity } = content
   const badgeRef = useRef<HTMLDivElement>(null)
+  const titleRef = useRef<HTMLHeadingElement>(null)
   const reduce = useReducedMotion()
 
   useEffect(() => {
@@ -20,6 +22,25 @@ export function Hero({ content }: { content: Content }) {
     }
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
+  }, [reduce])
+
+  useEffect(() => {
+    const title = titleRef.current
+    if (!title || reduce || matchMedia('(hover: none)').matches) return
+    let raf = 0
+    const onMove = (e: PointerEvent) => {
+      if (raf) return
+      raf = requestAnimationFrame(() => {
+        raf = 0
+        const px = (e.clientX / innerWidth) * 2 - 1
+        const py = (e.clientY / innerHeight) * 2 - 1
+        title.style.setProperty('--skew', `${(px * 1.6).toFixed(2)}deg`)
+        title.style.setProperty('--drift', `${(px * 10).toFixed(1)}px`)
+        title.style.setProperty('--tilt', `${(-py * 1.1).toFixed(2)}deg`)
+      })
+    }
+    window.addEventListener('pointermove', onMove, { passive: true })
+    return () => window.removeEventListener('pointermove', onMove)
   }, [reduce])
 
   const line = (text: string, i: number, className: string, accent = false) => (
@@ -41,32 +62,36 @@ export function Hero({ content }: { content: Content }) {
 
   return (
     <section id="top" className="hero">
-      <div className="hero-id">
-        <span className="hero-name">{identity.name}</span>
-        <span className="hero-meta">
-          {identity.role} · {identity.location}
-        </span>
-      </div>
-      <h1 className="hero-title">
-        {line(hero.line1, 0, 'mask-1')}
-        {line(hero.line2, 1, 'mask-2')}
-        {line(hero.line3, 2, 'mask-3', true)}
-      </h1>
-      <div className="hero-grid">
-        <p className="lead">{hero.blurb}</p>
-        <div className="chips">
-          {tags.map((t, i) => (
-            <motion.span
-              key={t}
-              className="chip"
-              initial={reduce ? false : { opacity: 0, y: 12 }}
-              whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.05 }}
-            >
-              {t}
-            </motion.span>
-          ))}
+      <ShaderField mode="ink" intensity={0.82} className="hero-shader" />
+      <div className="hero-scrim" aria-hidden="true" />
+      <div className="hero-inner">
+        <div className="hero-id">
+          <span className="hero-name">{identity.name}</span>
+          <span className="hero-meta">
+            {identity.role} · {identity.location}
+          </span>
+        </div>
+        <h1 className="hero-title" ref={titleRef}>
+          {line(hero.line1, 0, 'mask-1')}
+          {line(hero.line2, 1, 'mask-2')}
+          {line(hero.line3, 2, 'mask-3', true)}
+        </h1>
+        <div className="hero-grid">
+          <p className="lead">{hero.blurb}</p>
+          <div className="chips">
+            {tags.map((t, i) => (
+              <motion.span
+                key={t}
+                className="chip"
+                initial={reduce ? false : { opacity: 0, y: 12 }}
+                whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.05 }}
+              >
+                {t}
+              </motion.span>
+            ))}
+          </div>
         </div>
       </div>
       <div className="badge" ref={badgeRef}>

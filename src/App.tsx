@@ -2,44 +2,53 @@ import { useCallback, useEffect, useState } from 'react'
 import { useContent } from './hooks/useContent'
 import { initTheme } from './lib/theme'
 import { Cursor } from './components/Cursor'
-import { Nav } from './components/Nav'
-import { Hero } from './components/Hero'
-import { Tray } from './components/Tray'
-import { ProjectSheets } from './components/ProjectSheets'
-import { Kit } from './components/Kit'
-import { About } from './components/About'
-import { RouteTimeline } from './components/RouteTimeline'
-import { Desk } from './components/Desk'
-import { Contact } from './components/Contact'
+import { ScrollProgress } from './components/ScrollProgress'
+import { VariantToggle } from './components/VariantToggle'
+import { ForgeApp } from './variants/forge/ForgeApp'
+import { JourneyApp } from './variants/journey/JourneyApp'
+
+export type Variant = 'forge' | 'journey'
+const VKEY = 'portfolio-variant'
+
+function initVariant(): Variant {
+  const q = new URLSearchParams(location.search).get('v')
+  if (q === 'forge' || q === 'journey') return q
+  try {
+    const s = localStorage.getItem(VKEY)
+    if (s === 'forge' || s === 'journey') return s
+  } catch {}
+  return 'journey'
+}
 
 export default function App() {
   const { content } = useContent()
-  const [openId, setOpenId] = useState<string | null>(null)
+  const [variant, setVariant] = useState<Variant>(initVariant)
 
   useEffect(() => {
     initTheme()
   }, [])
 
-  const openSheet = useCallback((id: string) => setOpenId(id), [])
-  const closeSheets = useCallback(() => setOpenId(null), [])
+  const changeVariant = useCallback((v: Variant) => {
+    setVariant(v)
+    try {
+      localStorage.setItem(VKEY, v)
+    } catch {}
+    const url = new URL(location.href)
+    url.searchParams.set('v', v)
+    history.replaceState(null, '', url)
+  }, [])
 
   return (
-    <div className="page">
+    <div className="page" data-variant={variant}>
       <div className="noise" aria-hidden="true" />
       <Cursor />
-      <Nav content={content} />
-      <Hero content={content} />
-      <Tray projects={content.projects} onOpen={openSheet} />
-      <ProjectSheets
-        projects={content.projects}
-        openId={openId}
-        onClose={closeSheets}
-      />
-      <Kit stack={content.stack} />
-      <About content={content} />
-      <RouteTimeline stops={content.stops} />
-      <Desk content={content} />
-      <Contact content={content} />
+      <ScrollProgress />
+      <VariantToggle variant={variant} onChange={changeVariant} />
+      {variant === 'forge' ? (
+        <ForgeApp content={content} />
+      ) : (
+        <JourneyApp content={content} />
+      )}
     </div>
   )
 }

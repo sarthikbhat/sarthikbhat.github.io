@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import type { Project } from '../lib/types'
 import { getPalette, onTheme, lum } from '../lib/theme'
+import { ShaderField } from '../gl/ShaderField'
 
 interface Body {
   r: number
@@ -354,6 +355,7 @@ export function Tray({
       </div>
 
       <div className="tray-box" ref={boxRef}>
+        <ShaderField mode="ink" intensity={0.32} className="tray-shader" />
         <canvas className="tray-cv" ref={cvRef} />
         <div className="tray-meta">
           <span ref={fpsRef}>60</span> fps · <span ref={nRef}>0</span> bodies ·
